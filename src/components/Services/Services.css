@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.head {
+    background-color: #f6f8fb;
+    display: flex;
+    margin-bottom: 70px;
+    justify-content: space-evenly;
+}
+
+.head .content {
+    flex: 5 1 0px;
+    order: -1;
+    padding: 10% 5%;
+    text-align: justify;
+}
+
+.head .head-img {
+    flex: 6 1 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main h2 {
+    text-align: center;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2%;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 6%;
+    align-items: flex-start;
+    column-gap: 10%;
+    justify-items: center;
+
+
+}
+
+.services-container * {
+    flex: 1 1 0px;
+    padding-bottom: 8%;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+    margin-bottom: 7%;
+    color: white;
+    border-radius: 1.5rem;
+    font-size: 200%;
+
+}
+
+ .service:hover {
+    transform: scale(1.2);
+    border-radius: 12px;
+    background-color: #dadada;
+  }
+
+@media only screen and (min-width: 300px) {
+
+    /* For mobile phones: */
+    .services-container {
+        grid-template-columns: auto;
+    }
+
+    .head {
+        flex-direction: column;
+    }
+
+    .head .content {
+        order: 1;
+    }
+
+    .head-img img {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+
+    /* For tablet: */
+    .services-container {
+        grid-template-columns: auto auto;
+    }
+
+    .head {
+        flex-direction: column;
+    }
+
+    .head .content {
+        order: 1;
+    }
+    
+    .head-img img{
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 961px) {
+
+    /* For tablet: */
+    .services-container {
+        grid-template-columns: auto auto auto auto;
+    }
+
+    .head {
+        flex-direction: row;
+    }
+
+    .head .content {
+        order: -1;
+    }
+
+    
+}
